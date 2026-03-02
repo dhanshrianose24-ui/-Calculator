@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultion with Js</title>
+</head>
+<body>
+    <button type="button"class="btn-cal"onclick="show()">Calculator</button>
+    <div class="cal" id="cal">
+        <div class="header">
+            <h2>Calculator</h2>
+           <span type="button"class="close"onclick="hide()">&times;</span>
+        </div>
+        <div style="clear: both;"></div>
+        <form action=""name="calculator">
+            <table border="0">
+                <tr>
+                    <td colspan="4">
+                        <textarea name="input"id=""placeholder="Calculation"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button"onclick="Calculation('%')">& </button> </td>
+                    <td><button type="button"onclick="input.value='',inputstr=''">  AC </button> </td>
+                    <td><button type="button"onclick="input.value=input.value.slice(0,-1)">&#9984; </button> </td>
+                    <td><button type="button"onclick="Calculation('/')">&#10135; </button> </td>
+                </tr>
+                <tr>
+                  <td><button type="button"onclick="Calculation('7')">7 </button> </td>
+                  <td><button type="button"onclick="Calculation('8')">8 </button> </td>
+                  <td><button type="button"onclick="Calculation('9')">9 </button> </td> 
+                  <td><button type="button"onclick="Calculation('*')">&times; </button> </td>  
+                </tr>
+                <tr>
+                  <td><button type="button"onclick="Calculation('4')">4 </button> </td>
+                  <td><button type="button"onclick="Calculation('5')">5 </button> </td>
+                  <td><button type="button"onclick="Calculation('6')">6 </button> </td> 
+                  <td><button type="button"onclick="Calculation('-')">&#10134; </button> </td>  
+                </tr>
+                <tr>
+                  <td><button type="button"onclick="Calculation('3')">3 </button> </td>
+                  <td><button type="button"onclick="Calculation('2')">2 </button> </td>
+                  <td><button type="button"onclick="Calculation('1')">1 </button> </td> 
+                  <td><button type="button"onclick="Calculation('+')">&#10133; </button> </td>  
+                </tr>
+                <tr>
+                  <td><button type="button"onclick="Calculation('.')">. </button> </td>
+                  <td><button type="button"onclick="Calculation('0')">0 </button> </td>
+                  <td colspan="2"><button type="button"onclick="input.value=eval(inputstr)" class="btn-cal">=</button> </td>  
+                </tr>
+            </table>
+        </form>
+    </div>  
+</body>
+</html>
