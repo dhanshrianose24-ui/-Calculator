@@ -1,0 +1,78 @@
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cal{
+            margin: 10px auto;
+            text-align: center;
+            background-color: #eef3ff;
+            width: 400px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        .header{
+            width: 100%;
+        }
+        .header h2{
+            float: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 36px;
+        }
+        
+        
+        .close{
+            font-size: 40px;
+            float: right;
+            font-weight: bold;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table textarea{
+            resize: none;
+            height: 100px;
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            border: none;
+        }
+        table textarea:focus{
+            outline: none;
+        }
+        table button{
+            width: 94px;
+            height: 60px;
+            border: none;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 18px;
+            box-shadow: 0px 2px 4px rgb(196,196,196);
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+        .btn-cal{
+            height: 60px;
+            width: 180px;
+            color: white;
+            background-color: #0067C0;
+            font-size: 25px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0px 2px 4px rgb(196,196,196);
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+        table button:hover{
+            background-color: #b2c4ee;
+        }
+        .btn-cal:hover{
+            background-color: #11497a;
+        }
+    </style>
